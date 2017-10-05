@@ -35,7 +35,7 @@
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <!-- Site wrapper -->
-<div class="wrapper">
+<div class="wrapper" id="app">
 
     @include('layouts.partials.header')
 
@@ -76,13 +76,13 @@
 
 <script src="{{ asset('js/app.js') }}"></script>
 
+@stack('js')
+
 <script>
     $(document).ready(function () {
         $('.sidebar-menu').tree()
     })
 </script>
-
-@stack('js')
 
 </body>
 </html>
