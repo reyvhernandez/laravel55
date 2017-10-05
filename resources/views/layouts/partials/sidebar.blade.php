@@ -12,10 +12,10 @@
             </div>
         </div>
         <!-- search form -->
-        @include('layouts.partials._search')
+        @include('layouts.partials.search')
         <!-- /.search form -->
         <!-- sidebar menu: : style can be found in sidebar.less -->
-        @include('layouts.partials._menu')
+        @include('layouts.partials.menu')
     </section>
     <!-- /.sidebar -->
 </aside>

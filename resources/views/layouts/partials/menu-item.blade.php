@@ -6,7 +6,7 @@
 
         @if($item->hasChildren())
             <ul class="treeview-menu">
-                @include('layouts.partials._menu-item', ['items' => $item->children()])
+                @include('layouts.partials.menu-item', ['items' => $item->children()])
             </ul>
         @endif
     </li>

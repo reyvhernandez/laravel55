@@ -37,12 +37,12 @@
 <!-- Site wrapper -->
 <div class="wrapper">
 
-    @include('layouts.partials._header')
+    @include('layouts.partials.header')
 
     <!-- =============================================== -->
 
     <!-- Left side column. contains the sidebar -->
-    @include('layouts.partials._sidebar')
+    @include('layouts.partials.sidebar')
 
     <!-- =============================================== -->
 
@@ -50,10 +50,10 @@
     @yield('content')
     <!-- /.content-wrapper -->
 
-    @include('layouts.partials._footer')
+    @include('layouts.partials.footer')
 
     <!-- Control Sidebar -->
-    @include('layouts.partials._control-sidebar')
+    @include('layouts.partials.control-sidebar')
     <!-- /.control-sidebar -->
     <!-- Add the sidebar's background. This div must be placed
          immediately after the control sidebar -->
