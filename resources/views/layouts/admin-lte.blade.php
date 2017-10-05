@@ -74,6 +74,8 @@
 <!-- AdminLTE for demo purposes -->
 <script src="{{ asset('js/demo.js') }}"></script>
 
+<script src="{{ asset('js/app.js') }}"></script>
+
 @stack('js')
 <script>
     $(document).ready(function () {
