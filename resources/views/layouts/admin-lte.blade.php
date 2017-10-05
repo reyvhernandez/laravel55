@@ -76,11 +76,13 @@
 
 <script src="{{ asset('js/app.js') }}"></script>
 
-@stack('js')
 <script>
     $(document).ready(function () {
         $('.sidebar-menu').tree()
     })
 </script>
+
+@stack('js')
+
 </body>
 </html>
