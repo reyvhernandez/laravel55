@@ -13,7 +13,7 @@
                 {{--<li><a href="#">Examples</a></li>--}}
                 {{--<li class="active">Blank page</li>--}}
             {{--</ol>--}}
-            {{ Breadcrumbs::render('home') }}
+            {{ Breadcrumbs::render('dashboard') }}
         </section>
 
         <!-- Main content -->
