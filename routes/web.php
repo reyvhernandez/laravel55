@@ -17,4 +17,10 @@ Route::get('/', function(){
    return view('welcome');
 });
 
+Route::group( ['middleware' => ['auth']], function() {
+    Route::resource('users', 'UsersController');
+    Route::resource('roles', 'RolesController');
+    Route::resource('products', 'ProductsController');
+});
+
 Route::get('dashboard', 'DashboardController@index')->name('dashboard');
