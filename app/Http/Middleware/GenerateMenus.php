@@ -29,11 +29,8 @@ class GenerateMenus
             $menu->dashboard->add('Dashboard v2', '#')
                 ->prepend('<i class="fa fa-circle-o"></i>');
 
-            $menu->add('Widgets', '#')
-                ->prepend('<i class="fa fa-th"></i><span>')
-                ->append('</span><span class="pull-right-container">
-                          <small class="label pull-right bg-green">new</small>
-                        </span>');
+            $menu->add('Users', route('users.index'))
+                ->prepend('<i class="fa fa-users"></i><span>');
         });
 
         return $next($request);

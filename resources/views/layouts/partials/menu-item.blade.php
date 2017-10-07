@@ -1,5 +1,5 @@
 @foreach($items as $item)
-    <li class="treeview">
+    <li class="{{ $item->hasChildren() ?  'treeview' : '' }}">
         <a href="{!! $item->url() !!}">
             {!! $item->title !!}
         </a>
